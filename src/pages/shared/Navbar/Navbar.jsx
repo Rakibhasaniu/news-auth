@@ -7,6 +7,7 @@ const Navbar = () => {
         <li><NavLink to='/'>Home</NavLink></li>
         <li><NavLink to='/about'>About</NavLink></li>
         <li><NavLink to='/career'>Career</NavLink></li>
+        <li><NavLink to='/login'>Login</NavLink></li>
     </>
     return (
         <div className="navbar bg-base-100">
@@ -47,7 +48,9 @@ const Navbar = () => {
             src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp" />
         </div>
       </div>
-          <Link className='btn'>LogIn</Link>
+          <Link to="/login">
+          <button  className='btn' >Login</button>
+          </Link>
         </div>
       </div>
     );
